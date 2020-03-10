@@ -1,0 +1,95 @@
+@import (reference) '../../../styles/index.less';
+.content{
+    border-radius: @border-radius-content;
+    margin: 0px;
+    min-height: 280px
+}
+.sidebarContent{
+    // background: #F5F8F9;
+    border-radius: @border-radius-full;
+    margin: 0px;
+}
+aside{
+    padding: @padding-margin-val;
+
+    .profileAvatar{
+        background-image: url('../../../images/rolwinreevan.jpg');
+        height: 219px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius:  @border-radius-full;
+        @media screen and (max-width:767px){
+            max-width: 230px;
+            margin: auto;
+            
+        }
+    }
+    .name{
+        margin-top:1.4rem;
+        h2{
+            font-weight: 200;
+            letter-spacing: 2px;
+        }
+        span{
+            font-weight: 600;
+            letter-spacing: 0px;
+        }
+        .badge {
+            margin-top: 0.5rem;
+            font-size: .837rem;
+            font-weight: 400;
+            border-radius: 10rem;
+            padding: .6rem 1rem;
+        }
+        .badgeGray {
+            background-color: #E9EDF0;
+            color: #44566C;
+        }
+        .boxName{
+            width: 100%;
+        }
+        ul{
+            list-style-type: none;
+            a{
+                color: rgba(0, 0, 0, 0.65);
+                width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+            }
+        }
+        .contactBlock {
+            color: #44566C;
+            font-size: .937rem;
+            padding-left: 0;
+            margin-bottom: 1.3rem;
+            @media screen and (max-width: 767px){
+                max-width: 230px;
+            }
+        }
+        .contactBlockItem {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: -moz-box;
+            display: flex;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin-bottom: .75rem;
+        }
+        
+    }
+}
+.background{
+    .whiteBg()
+}
+.boxContent{
+    padding: @padding-margin-val;
+    padding-left: 0;
+    @media screen and (max-width: 767px){
+        padding: @padding-margin-val;
+        padding-top: 0;
+    }
+    
+}
