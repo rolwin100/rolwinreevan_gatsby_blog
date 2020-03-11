@@ -11,9 +11,7 @@ module.exports = {
     pages: {
       home: '/',
       blog: 'blog',
-      about: 'about',
-      tag: 'tag',
-      archive: 'archive'
+      contact: 'contact',
     },
     social: {
       github: 'https://github.com/lgcolella',

@@ -47,7 +47,9 @@ const Sidebar = (props) => {
                             </Affix>
                         </Col>
                         <Col sm={24} md={15} lg={18}>
-                            {props.children}
+                            <Layout className={`${style.background} ${style.boxContent}`}>
+                                {props.children}
+                            </Layout>
                         </Col>
                     </Row>
                 </Content>
@@ -59,13 +61,29 @@ const Sidebar = (props) => {
                             <DomContent />
                         </Col>
                         <Col sm={24} md={15} lg={18}>
-                            {props.children}
+                            <Layout className={`${style.background} ${style.boxContent}`}>
+                                {props.children}
+                            </Layout>
                         </Col>
                     </Row>
                 </Content>
             </Layout>
     }
     </>
+}
+
+export const Sidebar404 = (props) => {
+    return  <Layout >
+                <Content className={`${style.content} ${style.background} `}>
+                    <Row>
+                        <Col sm={24} md={24} lg={24}>
+                            <Layout className={`${style.background} ${style.boxContent} ${style.sideBar404Radius}`}>
+                                {props.children}
+                            </Layout>
+                        </Col>
+                    </Row>
+                </Content>
+            </Layout> 
 }
 
 export default Sidebar
