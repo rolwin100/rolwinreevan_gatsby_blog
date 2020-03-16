@@ -10,8 +10,11 @@ import PostCard from '../../components/PostCard'
 const Blog = ({ data }) =>
   <Layout className='outerPadding'>
     <Layout className='container'>
-      <Header />{console.log(data)}
+      <Header />
       <SidebarWrapper>
+        <div>
+            <h1 className="titleSeparate">Blog</h1>
+        </div>
         <Row gutter={[20, 20]}>
           {
             data.allMarkdownRemark && data.allMarkdownRemark.edges.map((val, key) =>
@@ -42,6 +45,7 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            date
             path
             title
             tags

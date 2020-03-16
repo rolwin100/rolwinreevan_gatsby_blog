@@ -1,0 +1,91 @@
+
+@import (reference) '../../styles/index.less';
+.container{
+    :not(pre) > code[class*="language-"] {
+        padding: .2em 0.8em;
+        border-radius: 2px;
+        font-weight: 500;
+        background-color: #657b83;
+        white-space: inherit;
+        font-family: inherit
+        ;
+        color: #5b6ac4;
+      }
+}
+.language-label-colors (@language,@content, @background, @text: @theme-text) {
+    @selector: ~'.gatsby-highlight[data-language=@{language}]::before';
+    @{selector} {
+        color: @text;
+        content: @content;
+        text-align: end;
+        top: .7rem;
+        left: -1rem;
+    }
+}
+.language-text{ 
+    background-color: rgba(27,31,35,.06) !important;
+}
+
+.gatsby-highlight {
+    position: relative;
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: attr(data-language);
+        text-indent: 15px;
+    }
+    &[data-language="text"], &[data-language="none"] {
+        &::before {
+            display: none;
+        }
+    }
+    pre {
+        overflow-x: auto;
+        overflow-y: hidden;
+        background-color: rgb(40, 42, 54) !important;
+        box-shadow: rgba(0, 0, 0, 0.55) 0px 6px 10px;
+        margin-bottom:2rem;
+        font-family: Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace!important;
+        code {
+            font-family: inherit;
+            line-height: 1.25em;
+            color: #50fa7b;
+            background-color: inherit;
+            .keyword{
+                color:#ff79c6
+            }
+            .comment{
+                color:#999
+            }
+            .punctuation{
+                color: white
+            }
+            .string{
+                color: #f1fa8c
+            }
+            .function{
+                color:#66d9ef
+            }
+            .class-name{
+                color:white
+            }
+            .builtin{
+                color: white
+            }
+            .operator{
+                color:#ff79c6
+            }
+            .number{
+                color: #bd93f9
+            }
+        }
+    }
+}
+
+.language-label-colors('html','html', #e34c26);
+.language-label-colors('css','css', #563d7c);
+.language-label-colors('javascript','JS', #efbb35, #000000);
+.language-label-colors('typescript','TS', #2b7489);
+.language-label-colors('php','php', #4F5D95);
