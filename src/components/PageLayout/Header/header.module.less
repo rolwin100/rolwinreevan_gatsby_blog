@@ -1,5 +1,42 @@
 @import (reference) '../../../styles/index.less';
 
+.circleMenu {
+    background: #304CFD;
+    border-radius: 50% 0 50% 50%;
+    box-shadow: 0 24px 40px rgba(48, 76, 253, 0.1), 0 8px 16px rgba(48, 76, 253, 0.1);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 3.75rem;
+    pointer-events: none;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 3.75rem;
+    z-index: 1101;
+    @media only screen and (max-width: 768px){
+        pointer-events: all;
+        visibility: visible;
+    }
+    .hamburger {
+        cursor: pointer;
+        color: #fff;
+        text-align: center;
+        .hamburgerText {
+            position: absolute;
+            width: 100%;
+            top: 33%;
+            left: 0;
+            font-size: .75rem;
+        }
+    }
+}
 .content{
     background: #fff;
     border-radius: @border-radius-content;
@@ -53,4 +90,51 @@
         }
     }
     
+}
+/** mobile header code */
+.openMenu{
+    ul{
+        display: block;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        transition: all 2s;
+        li{
+            margin-bottom: 1rem;
+        }
+    }
+    .nav{
+        background-color: #304CFD;
+        &:before {
+            background-image: none;
+        }
+        .navItem{
+            a{
+                color: white;
+            }
+            .anchorActive{
+                background-color: #304CFD;
+                border-radius: 14px;
+                color: white
+            }
+        }
+    }
+    .backgroundDiv{
+        position: fixed;
+        background-color: #304CFD;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+        right: 0;
+        top: 0;
+    }
+    
+}
+.hidden{
+    @media screen and ( max-width:768px ) {
+        display: none;
+    }
 }
