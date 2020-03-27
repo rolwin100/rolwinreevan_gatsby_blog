@@ -1,21 +1,23 @@
 
 module.exports = {
-    pathPrefix: '/gatsby-starter-developer-blog',
-    siteUrl: 'https://lgcolella.github.io',
-    siteTitle: 'Luigi Colella',
+    pathPrefix: '/gatsby-starter-developer-portfolio-blog',
+    siteUrl: 'https://rolwinreevan.com',
+    siteTitle: 'Rolwin Reevan',
     siteDescription: 'Logbook of a software developer',
-    author: 'lcolella',
+    author: 'Rolwin Reevan',
     postsForArchivePage: 3,
     defaultLanguage: 'en',
-    disqusScript: 'https://luigi-colella.disqus.com/embed.js',
     pages: {
       home: '/',
       blog: 'blog',
       contact: 'contact',
+      resume:'resume'
     },
     social: {
-      github: 'https://github.com/lgcolella',
-      linkedin: '',
+      github: 'https://github.com/rolwin100',
+      facebook: 'https://www.facebook.com/rolwin.monteiro',
+      twitter:'https://twitter.com/rolwin100',
+      instagram:'https://www.instagram.com/reevan100/',
       rss: '/rss.xml'
     },
     tags: {

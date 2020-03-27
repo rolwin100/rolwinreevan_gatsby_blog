@@ -16,7 +16,7 @@ export default ()=> {
 
                 const [ width ] = useWindowSize()
                 const toggleMenu = ()=>{
-                        if(width < 768)
+                        if(width <= 768)
                                 menu ? setMenu( false ) : setMenu( true) 
                 }
                 return <>
@@ -37,7 +37,7 @@ export default ()=> {
                                                 <li className={style.navItem}>
                                                         <Link to={`/${Utils.resolvePageUrl(Config.pages.blog)}`}  onClick={toggleMenu} activeClassName={style.anchorActive}>Blog</Link>
                                                 </li>
-                                                <li className={style.navItem}><a href='#about'>Resume</a></li>
+                                                <li className={style.navItem}><Link to={`/${Utils.resolvePageUrl(Config.pages.resume)}`}  onClick={toggleMenu} activeClassName={style.anchorActive}>Resume</Link></li>
                                         </ul>
                                 </div>
                         </Layout>

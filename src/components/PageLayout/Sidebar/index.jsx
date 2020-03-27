@@ -7,7 +7,7 @@ import { useWindowSize } from '../../../hooks'
 
 const { Content } = Layout
 
-const DomContent = (props) =>
+const DomContent = () =>
 
     <aside>
         <div className={style.profileAvatar}></div>
@@ -19,10 +19,10 @@ const DomContent = (props) =>
             </div>
             <div className={`${style.badge} ${style.badgeGray}`}>Software Engineer</div>
             <div className='centerAlign box'>
-                <FA name='facebook-f' />
-                <FA name='twitter' />
-                <FA name='github' />
-                <FA name='instagram' />
+                <a href='https://www.facebook.com/rolwin.monteiro' target='_blank' rel="noopener noreferrer"><FA name='facebook-f' /></a>
+                <a href='https://twitter.com/rolwin100' target='_blank' rel="noopener noreferrer"><FA name='twitter' /></a>
+                <a href='https://github.com/rolwin100' target='_blank' rel="noopener noreferrer"><FA name='github' /></a>
+                <a href='https://www.instagram.com/reevan100/' target='_blank' rel="noopener noreferrer"><FA name='instagram' /></a>
             </div>
             <ul className={`box ${style.badge} contactBlock`}>
                 <li className={`${style.contactBlockItem}`}><span><FeatherIcon size='19' icon='calendar' /> </span>&nbsp; &nbsp; May 9,1995</li>

@@ -6,11 +6,17 @@ import { Layout, Row, Col } from 'antd'
 
 import SidebarWrapper from '../../components/PageLayout/Sidebar'
 import PostCard from '../../components/PostCard'
+import SEO from '../../components/Seo'
 
 const Blog = ({ data }) =>
   <Layout className='outerPadding'>
     <Layout className='container'>
       <Header />
+      <SEO
+          title="About"
+          description="A brief summary of this blog"
+          path="about"
+        />
       <SidebarWrapper>
         <div>
             <h1 className="titleSeparate">Blog</h1>
