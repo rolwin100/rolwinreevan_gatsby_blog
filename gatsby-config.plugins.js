@@ -5,6 +5,7 @@ module.exports = [
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-less',
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -15,11 +16,11 @@ module.exports = [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'Luigi Colella Blog',
-        short_name: 'Luigi Colella',
+        name: 'Rolwin Reevan',
+        short_name: 'Rolwin Reevan',
         start_url: '/',
-        background_color: '#0C2744',
-        theme_color: '#0C2744',
+        background_color: '#304CFD',
+        theme_color: '#304CFD',
         display: 'standalone',
         icon: 'src/images/icon.png', // This path is relative to the root of the site.
         legacy: true, // this will add apple-touch-icon links to <head>. Required for versions prior to iOS 11.3.

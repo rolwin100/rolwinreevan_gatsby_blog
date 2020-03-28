@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 /* App imports */
 import Config from '../../../config'
-import Utils from '../../utils'
+import Utils from '../../utils/pageUtils'
 
 function SEO({
   title,

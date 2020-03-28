@@ -2,7 +2,7 @@
 const path = require('path');
 /* App imports */
 const config = require('./config');
-const utils = require('./src/utils');
+const utils = require('./src/utils/pageUtils');
 
 exports.createPages = ({ actions, graphql }) => {
 

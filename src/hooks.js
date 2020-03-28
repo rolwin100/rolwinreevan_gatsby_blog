@@ -1,5 +1,9 @@
 import { useState, useLayoutEffect } from 'react'
 
+/**
+ * custom hoook to detect the window size of a broswer
+ * @return {Array} [height, width ].
+ */
 export const useWindowSize = () =>{
     const [size, setSize] = useState([0, 0]);
     useLayoutEffect(() => {

@@ -6,7 +6,7 @@ import 'font-awesome/less/font-awesome.less'
 import style from './header.module.less'
 import '../../../styles/global.less'
 import Config from '../../../../config'
-import Utils from '../../../utils'
+import Utils from '../../../utils/pageUtils'
 import { useWindowSize } from '../../../hooks'
 
 
@@ -21,7 +21,9 @@ export default ()=> {
                 }
                 return <>
                         <div className={style.circleMenu} onClick={toggleMenu}>
-                                <div className={style.hamburger}>
+                                <div className={`${style.hamburger} ${ menu ? style.menuIcon :null }`}>
+                                        <div className={style.line}></div>
+                                        <div className={style.line}></div>
                                         <div className={style.hamburgerText}>MENU</div>
                                 </div>
                         </div>

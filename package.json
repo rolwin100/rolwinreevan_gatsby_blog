@@ -23,6 +23,7 @@
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-less": "^3.0.19",
     "gatsby-plugin-manifest": "^2.3.3",
+    "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sharp": "^2.5.3",

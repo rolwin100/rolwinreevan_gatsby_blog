@@ -1,4 +1,3 @@
-
 module.exports = {
     pathPrefix: '/gatsby-starter-developer-portfolio-blog',
     siteUrl: 'https://rolwinreevan.com',
@@ -20,6 +19,7 @@ module.exports = {
       instagram:'https://www.instagram.com/reevan100/',
       rss: '/rss.xml'
     },
+    contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || '',
     tags: {
       angular: {
         description: 'Angular is an open source web application platform.'

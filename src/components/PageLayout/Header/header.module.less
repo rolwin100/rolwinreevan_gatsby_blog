@@ -37,6 +37,26 @@
         }
     }
 }
+.menuIcon {
+    .hamburgerText {
+        opacity: 0;
+    }
+    .line{
+        background-color: #fff;
+        border-radius: 4px;
+        display: block;
+        margin: 4px 0;
+        height: 2px;
+        width: 18px;
+        transition: all 0.2s ease-in-out;
+    }
+    .line:nth-child(1) {
+        transform: translateY(0px) rotate(45deg);
+    }
+    .line:nth-child(2) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+}
 .content{
     background: #fff;
     border-radius: @border-radius-content;
@@ -97,7 +117,7 @@
         display: block;
         margin: 0;
         position: absolute;
-        top: 50%;
+        top: (50% - 5rem);
         left: 50%;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -114,6 +134,7 @@
         .navItem{
             a{
                 color: white;
+                font-size: 1.5rem;
             }
             .anchorActive{
                 background-color: #304CFD;
@@ -131,7 +152,6 @@
         right: 0;
         top: 0;
     }
-    
 }
 .hidden{
     @media screen and ( max-width:768px ) {
