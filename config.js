@@ -20,6 +20,7 @@ module.exports = {
       rss: '/rss.xml'
     },
     contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || '',
+    googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',
     tags: {
       angular: {
         description: 'Angular is an open source web application platform.'

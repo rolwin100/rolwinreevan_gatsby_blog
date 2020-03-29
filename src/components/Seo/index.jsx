@@ -22,7 +22,6 @@ function SEO({
     <StaticQuery
       query={detailsQuery}
       render={data => {
-          console.log('hii',data)
         const metaKeywords =
           keywords && keywords.length > 0
             ? { name: 'keywords', content: keywords.join(', ') }

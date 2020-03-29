@@ -11,7 +11,7 @@ const Contact = () => {
             <Layout className='container'>
                 <Header />
                 <SidebarWrapper>
-                    <div>
+                    <div id ='contact'>
                         <h1 className="titleSeparate">Contact</h1>
                     </div>
                     <Row gutter={[40, 20]}>

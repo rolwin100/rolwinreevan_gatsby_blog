@@ -18,7 +18,7 @@ const Blog = ({ data }) =>
           path="about"
         />
       <SidebarWrapper>
-        <div>
+        <div id='blog'>
             <h1 className="titleSeparate">Blog</h1>
         </div>
         <Row gutter={[20, 20]}>
