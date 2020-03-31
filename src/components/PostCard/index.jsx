@@ -6,8 +6,8 @@ import style from './postCard.module.less'
 const PostCard = (props) => {
     const data = props.data.node.frontmatter;
 
-    return <Link to={data.path}>
-        <div className={style.postCard}>
+    return <div className={style.postCard}>
+        <Link to={data.path}>
             <div className={style.postCardImg} style={{
                 backgroundImage: `url(${data ? data.cover.childImageSharp.fluid.src : ''})`,
             }}></div>
@@ -23,8 +23,8 @@ const PostCard = (props) => {
                     }
                 </p>
             </div>
-        </div>
-    </Link>
+        </Link>
+    </div>
 }
 
 export default PostCard;
