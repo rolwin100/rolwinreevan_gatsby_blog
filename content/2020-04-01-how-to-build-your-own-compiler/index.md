@@ -9,9 +9,9 @@ excerpt: Compilers are there everywhere in our day to day use. Most developers t
 
 Today we are going to write a compiler together this compiler is going to be the smallest compiler in the world. Since it's going to be a long article you can skip directly to the [code](https://github.com/rolwin100/mini_compiler_demo) if you can't wait 😅.
 
-Compilers are there everywhere, right from the point you switch ON your machine till your surf the web or open any application. So why do many developers tend to give less importance to it and don't have much knowledge on how it works 🤔. Probably they think compilers are too scary 👻 and only the nerdiest of the geeks 🤓 can work on it. But that not true. Compilers are quite simple. It's just that they involve a little understanding.
+Compilers are there everywhere, right from the point you switch ON your machine till you surf the web or open any application. So why do many developers tend to give less importance to it and don't have much knowledge on how it works 🤔. Probably they think compilers are too scary 👻 and only the nerdiest of the geeks 🤓 can work on it. But that not true. Compilers are quite simple. It's just that they involve a little understanding.
 
-Before jumping into what is a compiler and how compilers work. I'll explain what we are going to do in this article. We are going to write a code to compile a [`LISP`](https://en.wikipedia.org/wiki/Lisp_(programming_language)){:target="_blank"} like function calls into C-like function calls. For those of you who don't know what is LISP, it's just a very old programming language like Fortran.
+Before jumping into what is a compiler and how compilers work. I'll explain what we are going to do in this article. We are going to write a code to compile a [`LISP`](https://en.wikipedia.org/wiki/Lisp_(programming_language)) like function calls into C-like function calls. For those of you who don't know what is LISP, it's just a very old programming language like Fortran.
 
 For example if we have two functions `add` and `subtract` they would be written like this in LISP and C.
 
