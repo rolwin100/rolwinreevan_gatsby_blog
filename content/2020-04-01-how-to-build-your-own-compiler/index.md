@@ -7,7 +7,7 @@ cover: ./compiler.png
 excerpt: Compilers are there everywhere in our day to day use. Most developers tend to ignore it because they feel only the nerdiest of the geeks can code it. Let's build the worlds smallest compiler to understand how compilers work.
 ---
 
-Today we are going to write a compiler together this compiler is going to be the smallest compiler in the world. Since it's going to be a long article you can skip directly to the [code](https://github.com/rolwin100/mini_compiler_demo){:target="_blank"} if you can't wait 😅.
+Today we are going to write a compiler together this compiler is going to be the smallest compiler in the world. Since it's going to be a long article you can skip directly to the [code](https://github.com/rolwin100/mini_compiler_demo) if you can't wait 😅.
 
 Compilers are there everywhere, right from the point you switch ON your machine till your surf the web or open any application. So why do many developers tend to give less importance to it and don't have much knowledge on how it works 🤔. Probably they think compilers are too scary 👻 and only the nerdiest of the geeks 🤓 can work on it. But that not true. Compilers are quite simple. It's just that they involve a little understanding.
 
