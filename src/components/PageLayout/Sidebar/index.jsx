@@ -3,7 +3,7 @@ import { Affix, Layout, Row, Col } from 'antd'
 import FA from 'react-fontawesome'
 import style from './sidebar.module.less'
 import FeatherIcon from 'feather-icons-react'
-import { useWindowSize } from '../../../hooks'
+import { useWindowSize } from '../../../utils/hooks'
 import Config from '../../../../config'
 
 const { Content } = Layout

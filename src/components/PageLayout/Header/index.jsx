@@ -6,7 +6,7 @@ import style from './header.module.less'
 import '../../../styles/global.less'
 import Config from '../../../../config'
 import Utils from '../../../utils/pageUtils'
-import { useWindowSize } from '../../../hooks'
+import { useWindowSize } from '../../../utils/hooks'
 
 
 
