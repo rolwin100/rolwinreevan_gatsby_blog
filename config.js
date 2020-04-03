@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: '/gatsby-starter-developer-portfolio-blog',
+    pathPrefix: '',
     siteUrl: 'https://rolwinreevan.com',
     siteTitle: 'Rolwin Reevan',
     siteDescription: 'Logbook of a software developer',
