@@ -53,15 +53,15 @@ So It depends on the use-case when to go for Gatsby and When to go for Wordpress
 
 1. If you have a team of more than 5 non-technical people working for some content marketing company then going for WordPress will be a good idea because gatsby involves a bit of technical work. If you are a javascript developer or a full stack web developer who wants to just build his portfolio and have a blog then gatsby is a good idea if you are maintaining the website by yourself.
 
-2. If cost is not much of your concern and ease of use is your concern then going for wordpress is a good idea. Because Wordpress involves a lot of plugins like wp-bakery etc that makes drag and drop functionality easier. If cost is your concern and you are ready for some little hard work you can go for Gatsby.
+2. If cost is not much of your concern and ease of use is your concern then going for wordpress is a good idea. Because Wordpress involves a lot of plugins like wp-bakery, yoast, etc, that makes drag and drop functionality and SEO easier. If cost is your concern and you are ready for some little hard work you can go for Gatsby.
 
-3. If you are planning for an online e-commerce application for small businesses with email marketing then Wordpress is better than Gatsby.
+3. If you are planning for an online e-commerce application for small businesses with email marketing then Wordpress is probably a better solution than Gatsby I believe.
 
-4. SEO and Performance in mind with minimal cost then `Gatsby` is the solution you can build a SPA and PWA applications easily with `Gatsby`.
+4. SEO and Performance in mind with minimal cost then `Gatsby` is the solution you can build a SPA and PWA applications easily with `Gatsby`. Even wordpress has some cool plugins like `Yoast`.
 
 ## Building a Gatsby application
 
-There are plenty of different ways to build gatsby websites. You can go through the starters which are available over the internet. I have also open-sourced my website [Rolwin Reevan](https://rolwinreevan.com) on my [Github page](https://github.com/rolwin100/rolwinreevan_gatsby_blog). You can use this starter to build your portfolio. I have put in a lot of effort to build this starter. So please make sure you give a star for this repo.
+There are plenty of different ways to build gatsby websites. To start with you can look into official [gatsby docs](https://www.gatsbyjs.org/docs/) and the tutorials on their [site](https://www.gatsbyjs.org/tutorial/). There are also a list of [plugins](https://www.gatsbyjs.org/plugins/) that can help you to develop your site faster. For more comparision about Wordpress with Gatsby you can check this [link](https://www.gatsbyjs.org/features/cms/). You can go through the starters which are available over the internet. I have also open-sourced my website [Rolwin Reevan](https://rolwinreevan.com) on my [Github page](https://github.com/rolwin100/rolwinreevan_gatsby_blog). You can use this starter to build your portfolio. I have put in a lot of effort to build this starter. So please make sure you give a star for this repo.
 
 
 
