@@ -9,7 +9,6 @@ const validateMessages = {
         email: 'Not a valid email!',
     },
 };
-console.log(Config)
 export default () => {
     const [form] = Form.useForm();
     const onFinish = data => {
