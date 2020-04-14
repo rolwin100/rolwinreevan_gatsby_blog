@@ -19,7 +19,7 @@ Wordpress is an `opensource` content management system that is built on top of `
 
 ## Then What's Gatsby ?
 
-Gatsby is a static page generator that takes data from various data sources and produces `graphql` API's that can be consumed by the frontend and once the build is taken the static pages are generated for the dynamic data. More over it's a framework built on top of `ReactJS` that takes care of lot of challenges while building `react` application. The most common data source that I use is transforming the markdowns into graphql data using the `gatsby-transformer-remark` plugin.
+Gatsby is a static page generator that takes data from various data sources and produces `graphql` API's that can be consumed by the frontend and once the build is taken the static pages are generated for the dynamic data. More over it's a framework built on top of `ReactJS` that takes care of lot of challenges while building `react` application. The most common data source that I use is transforming the markdowns into graphql data using the `gatsby-transformer-remark` plugin. Gatsby can also take data from sources like Wordpress and other CMS like drupal, contentful, etc. 
 
 ![](./gatsby-deploy.png)
 
@@ -33,7 +33,7 @@ Even gatsby has a lot of plugins that can be used for various other purposes. Bu
 
 2. ### Cost of deployment
 
-    The cost of deploying a gatsby application is way cheaper than a WordPress application. `Netlify` provides free deployment plans with `HTTPS` encryption. Suppose we are hosting a Wordpress application we need a considerably good server with a `MySql` database. So the cost will be a bit higher for this setup.
+    The cost of deploying a gatsby application is way cheaper than a WordPress application. `Netlify` provides a free deployment plan with `HTTPS` encryption. Suppose we are hosting a Wordpress application we need considerably a good server with a `MySql` database. So the cost will be a bit higher for this setup.
 
 3. ### I'm a developer
 
@@ -43,9 +43,9 @@ Even gatsby has a lot of plugins that can be used for various other purposes. Bu
 
     One important thing for me was branding my name `Rolwin Reevan` over the internet. For this all the factors of SEO had to be taken care which is a bit challenging. Since gatsby renders static pages the performance is good, which enhances the `SEO` as well. There are plugins for SEO in gatsby. Server-Side-Rendering (`SSR`) is also supported by gatsby.
 
-5. ### Gatsby satifies my use-case
+5. ### Gatsby satisfies my use-case
 
-    Most importantly gatsby was satisfying my use-case with minimal cost. My use-case before building my website was a static landing page and a dynamic blog. Even `Wordpress` satisfies this use-case very well but like I told the cost of deployment is higher for WordPress than a gatsby application and moreover I din want all the features that WordPress provides.
+    Most importantly gatsby was satisfying my use-case with minimal cost. My use-case before building my website was a static landing page and a dynamic blog. Even `Wordpress` satisfies this use-case very well, but like I told the cost of deployment is higher for WordPress than a gatsby application and moreover I din want all the features that WordPress provides.
 
 ## When to go for wordpress and when to go for gatsby?
 
