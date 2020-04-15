@@ -45,7 +45,7 @@ Even gatsby has a lot of plugins that can be used for various other purposes. Bu
 
 5. ### Gatsby satisfies my use-case
 
-    Most importantly gatsby was satisfying my use-case with minimal cost. My use-case before building my website was a static landing page and a dynamic blog. Even `Wordpress` satisfies this use-case very well, but like I told the cost of deployment is higher for WordPress than a gatsby application and moreover I din want all the features that WordPress provides.
+    Most importantly gatsby was satisfying my use-case with minimal cost. My use-case before building my website was a static landing page and a dynamic blog. Even `Wordpress` satisfies this use-case very well, but like I told the cost of deployment is higher for WordPress than a gatsby application and moreover I didn't want all the features that WordPress provides.
 
 ## When to go for wordpress and when to go for gatsby?
 
