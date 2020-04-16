@@ -29,7 +29,7 @@ const Post = ({ data }) => {
           <Img className={style.bannerImg} fluid={fluid} title={excerpt} alt={title} />
         </div>
 
-        <article dangerouslySetInnerHTML={{ __html: html }} />
+        <article className={style.blogArticle} dangerouslySetInnerHTML={{ __html: html }} />
       </SidebarWrapper>
     </Layout>
   </Layout>

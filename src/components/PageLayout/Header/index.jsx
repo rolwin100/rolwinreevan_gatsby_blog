@@ -32,7 +32,7 @@ export default ()=> {
                         }
                 }
                 return <>
-                        <div className={style.circleMenu} onClick={toggleMenu}>
+                        <div className={style.circleMenu} role = 'button' tabIndex="0" onKeyDown={toggleMenu} onClick={toggleMenu}>
                                 <div className={`${style.hamburger} ${ menu ? style.menuIcon :null }`}>
                                         <div className={style.line}></div>
                                         <div className={style.line}></div>
