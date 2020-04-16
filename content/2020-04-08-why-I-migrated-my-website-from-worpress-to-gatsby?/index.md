@@ -19,11 +19,13 @@ Wordpress is an `opensource` content management system that is built on top of `
 
 ## Then What's Gatsby ?
 
-Gatsby is a static page generator that takes data from various data sources and produces `graphql` API's that can be consumed by the frontend and once the build is taken the static pages are generated for the dynamic data. More over it's a framework built on top of `ReactJS` that takes care of lot of challenges while building `react` application. The most common data source that I use is transforming the markdowns into graphql data using the `gatsby-transformer-remark` plugin. Gatsby can also take data from sources like Wordpress and other CMS like drupal, contentful, etc. 
+Gatsby is a static page generator that takes data from various data sources and produces `graphql` API's that can be consumed by the frontend and once the build is taken the static pages are generated for the dynamic data. More over it's a framework built on top of `ReactJS` that takes care of lot of challenges while building `react` application. The most common data source that I use is transforming the markdowns into graphql data using the `gatsby-transformer-remark` plugin. Gatsby can also take data from sources like Wordpress and other CMS like drupal, contentful, etc. In short Gatsby’s data plugin ecosystem lets you build sites with the data you want — from one or many sources: get data from SaaS services, headless CMSs, APIs, databases, your file system, and more directly into your pages using GraphQL .
+
+
 
 ![](./gatsby-deploy.png)
 
-Even gatsby has a lot of plugins that can be used for various other purposes. But you need to be a bit of a coding geek to work with `gatsby`.
+Gatsby has a lot of plugins that can be used for various other purposes. But you need to be a bit of a coding geek to work with `gatsby`.
 
 ## Why I migrated to gatsby?
 
@@ -55,9 +57,9 @@ So It depends on the use-case when to go for Gatsby and When to go for Wordpress
 
 2. If cost is not much of your concern and ease of use is your concern then going for wordpress is a good idea. Because Wordpress involves a lot of plugins like wp-bakery, yoast, etc, that makes drag and drop functionality and SEO easier. If cost is your concern and you are ready for some little hard work you can go for Gatsby.
 
-3. If you are planning for an online e-commerce application for small businesses with email marketing then Wordpress is probably a better solution than Gatsby I believe.
+3. If you are planning for an online e-commerce application for small businesses with email marketing then Wordpress is probably a better solution than Gatsby I believe. The reason is you can build an e-commerce website easily with Wordpress. There are many plugins and themes that are available to set up an e-commerce website with Wordpress and you can easily keep track of your leads. The most commonly used Wordpress plugin for e-commerce application is `woocommerce`.
 
-4. SEO and Performance in mind with minimal cost then `Gatsby` is the solution you can build a SPA and PWA applications easily with `Gatsby`. Even wordpress has some cool plugins like `Yoast`.
+4. SEO and Performance in mind with minimal cost then `Gatsby` is the solution you can build a SPA and PWA applications easily with `Gatsby`. Even Wordpress has some cool plugins like `Yoast` for SEO and there are some very good flexibility while using Wordpress enhancing the SEO without much technical knowledge but you need a very good server to keep the performance of the `Wordpress` site up. If SEO is your concern then you should make sure that your site renders in less then 3 seconds.
 
 ## Building a Gatsby application
 
