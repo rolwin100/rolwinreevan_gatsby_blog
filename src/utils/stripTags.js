@@ -1,11 +1,12 @@
-export const stripTags = (str) =>{
-    if ((str === null) || (str === ''))
-        return false;
-    else
-        str = str.toString();
-    return str.replace(/(<([^>]+)>)/ig, '');
-}
+export const stripTags = (ipStr) => {
+  let str = ipStr;
+  if ((str === null) || (str === '')) {
+    return false;
+  }
 
-export const domHtml = (str) => {
-    return {__html: str};
-}
+  str = str.toString();
+
+  return str.replace(/(<([^>]+)>)/ig, '');
+};
+
+export const domHtml = (str) => ({ __html: str });

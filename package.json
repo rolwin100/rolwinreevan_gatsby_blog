@@ -39,6 +39,7 @@
     "less": "^3.11.1",
     "moment": "^2.24.0",
     "prismjs": "^1.19.0",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-fontawesome": "^1.7.1",
@@ -52,7 +53,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
-    "gatsby-plugin-eslint": "^2.0.8",
+    "gatsby-plugin-eslint-v2": "^2.0.0-beta.0",
     "prettier": "^1.19.1"
   },
   "repository": {
