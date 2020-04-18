@@ -27,11 +27,13 @@ const Post = ({ data }) => {
         />
         <Header />
         <SidebarWrapper>
-          <h1>{title}</h1>
-          <div className={style.bannerImgContainer}>
-            <Img className={style.bannerImg} fluid={fluid} title={excerpt} alt={title} />
+          <div className="marginTopTitle">
+            <h1>{title}</h1>
+            <div className={style.bannerImgContainer}>
+              <Img className={style.bannerImg} fluid={fluid} title={excerpt} alt={title} />
+            </div>
+            <article className={style.blogArticle} dangerouslySetInnerHTML={{ __html: html }} />
           </div>
-          <article className={style.blogArticle} dangerouslySetInnerHTML={{ __html: html }} />
         </SidebarWrapper>
       </Layout>
     </Layout>
