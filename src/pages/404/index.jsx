@@ -1,11 +1,24 @@
 import React from 'react';
 import { Layout } from 'antd';
-import { Link } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Header from '../../components/PageLayout/Header';
 import style from './404.module.less';
+
 import { Sidebar404 } from '../../components/PageLayout/Sidebar';
 
-export default () => (
+export const query = graphql`
+  {
+    file(base: { eq: "404.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 500) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`;
+
+export default ({ data }) => (
   <Layout className="outerPadding">
     <Layout className="container">
       <Header />
@@ -13,7 +26,7 @@ export default () => (
         <>
           <div className={`${style.sidebar404Img} ${style.boxContent}`}>
             <img
-              src="../404.png"
+              src={data.file.childImageSharp.fluid.src}
               width="100%"
               alt="404"
             />

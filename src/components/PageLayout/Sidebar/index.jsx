@@ -74,43 +74,27 @@ const Sidebar = (props) => {
   const { children } = props;
   return (
     <>
-      {
-        width > 997
-          ? (
-            <Layout>
-              <Content className={`${style.content} ${style.background}`}>
-                <Row>
-                  <Col sm={24} md={9} lg={6} className={style.sidebarContent}>
-                    <Affix offsetTop={0}>
-                      <DomContent />
-                    </Affix>
-                  </Col>
-                  <Col sm={24} md={15} lg={18}>
-                    <Layout className={`${style.background} ${style.boxContent}`}>
-                      { children }
-                    </Layout>
-                  </Col>
-                </Row>
-              </Content>
-            </Layout>
-          )
-          : (
-            <Layout>
-              <Content className={`${style.content} ${style.background}`}>
-                <Row>
-                  <Col sm={24} md={9} lg={6} className={style.sidebarContent}>
-                    <DomContent />
-                  </Col>
-                  <Col sm={24} md={15} lg={18}>
-                    <Layout className={`${style.background} ${style.boxContent}`}>
-                      {children}
-                    </Layout>
-                  </Col>
-                </Row>
-              </Content>
-            </Layout>
-          )
-    }
+      <Layout>
+        <Content className={`${style.content} ${style.background}`}>
+          <Row>
+            <Col sm={24} md={9} lg={6} className={style.sidebarContent}>
+              {
+                  width > 997
+                    ? (
+                      <Affix offsetTop={0}>
+                        <DomContent />
+                      </Affix>
+                    ) : (<DomContent />)
+              }
+            </Col>
+            <Col sm={24} md={15} lg={18}>
+              <Layout className={`${style.background} ${style.boxContent}`}>
+                { children }
+              </Layout>
+            </Col>
+          </Row>
+        </Content>
+      </Layout>
     </>
   );
 };

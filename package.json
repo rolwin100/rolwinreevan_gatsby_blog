@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "rolwinreevan_gatsby_blog",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "the most beautiful gatsby template ever designed using antd",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -58,9 +58,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/rolwin100/rolwinreevan_gatsby_blog"
   }
 }

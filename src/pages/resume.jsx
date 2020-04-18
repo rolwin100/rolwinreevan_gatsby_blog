@@ -9,6 +9,7 @@ export default class Resume extends Component {
       numPages: null,
       pageNumber: 1,
     };
+    this.onDocumentLoadSuccess = this.onDocumentLoadSuccess.bind(this);
   }
 
   onDocumentLoadSuccess({ numPages }) {

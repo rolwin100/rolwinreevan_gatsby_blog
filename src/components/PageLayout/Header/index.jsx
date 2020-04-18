@@ -4,39 +4,20 @@ import { Layout } from 'antd';
 import 'font-awesome/less/font-awesome.less';
 import style from './header.module.less';
 import '../../../styles/global.less';
-import Config from '../../../../config';
-import Utils from '../../../utils/pageUtils';
 import { useWindowSize } from '../../../utils/hooks';
 
 
 export default () => {
   const [menu, setMenu] = useState(false);
-  const [links, setLinks] = useState(
-    {
-      home: Utils.resolvePageUrl(Config.pages.home),
-      contact: `/${Utils.resolvePageUrl(Config.pages.contact)}`,
-      blog: `/${Utils.resolvePageUrl(Config.pages.blog)}`,
-      resume: `/${Utils.resolvePageUrl(Config.pages.resume)}`,
-    },
-  );
 
   const [width] = useWindowSize();
   const toggleMenu = () => {
-    const hashLinks = {};
     if (width !== 0 && width <= 768) {
       if (menu) {
         setMenu(false);
       } else {
         setMenu(true);
       }
-
-      // eslint-disable-next-line no-restricted-syntax
-      for (const key in links) {
-        if (links[key]) {
-          hashLinks[key] = `${links[key].split('#')[0]}#${key}`;
-        }
-      }
-      setLinks(hashLinks);
     }
   };
   return (
@@ -52,22 +33,22 @@ export default () => {
         <div className={style.backgroundDiv}>
           <ul className={style.nav}>
             <li className={style.navItem}>
-              <Link to={links.home} onClick={toggleMenu} activeClassName={style.anchorActive}>
+              <Link to="/" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 About
               </Link>
             </li>
             <li className={style.navItem}>
-              <Link to={links.contact} onClick={toggleMenu} activeClassName={style.anchorActive}>
+              <Link to="/contact" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 Contact
               </Link>
             </li>
             <li className={style.navItem}>
-              <Link to={links.blog} onClick={toggleMenu} activeClassName={style.anchorActive}>
+              <Link to="/blog" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 Blog
               </Link>
             </li>
             <li className={style.navItem}>
-              <Link to={links.resume} onClick={toggleMenu} activeClassName={style.anchorActive}>
+              <Link to="/resume" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 Resume
               </Link>
 
