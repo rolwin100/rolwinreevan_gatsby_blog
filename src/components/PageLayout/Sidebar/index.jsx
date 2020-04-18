@@ -4,6 +4,8 @@ import {
 } from 'antd';
 import FA from 'react-fontawesome';
 import FeatherIcon from 'feather-icons-react';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import { globalHistory } from '@reach/router';
 import style from './sidebar.module.less';
 import { useWindowSize } from '../../../utils/hooks';
 import Config from '../../../../config';
@@ -72,23 +74,31 @@ const DomContent = () => (
 const Sidebar = (props) => {
   const [width] = useWindowSize();
   const { children } = props;
+  const { pathname } = globalHistory.location;
+  let domContent = <DomContent />;
+  if (width > 997) {
+    domContent = (
+      <Affix offsetTop={0}>
+        <DomContent />
+      </Affix>
+    );
+  }
+  if (width < 768) {
+    domContent = <></>;
+    if (pathname === '/') {
+      domContent = <DomContent />;
+    }
+  }
   return (
     <>
       <Layout>
         <Content className={`${style.content} ${style.background}`}>
           <Row>
             <Col sm={24} md={9} lg={6} className={style.sidebarContent}>
-              {
-                  width > 997
-                    ? (
-                      <Affix offsetTop={0}>
-                        <DomContent />
-                      </Affix>
-                    ) : (<DomContent />)
-              }
+              { domContent }
             </Col>
             <Col sm={24} md={15} lg={18}>
-              <Layout className={`${style.background} ${style.boxContent}`}>
+              <Layout className={`${style.background} ${style.boxContent} borderRadiusSection`}>
                 { children }
               </Layout>
             </Col>

@@ -19,7 +19,7 @@ const Contact = () => (
       />
       <Header />
       <SidebarWrapper>
-        <div id="contact">
+        <div className="marginTopTitle">
           <h1 className="titleSeparate">Contact</h1>
         </div>
         <Row gutter={[40, 20]}>
