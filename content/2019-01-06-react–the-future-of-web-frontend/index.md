@@ -1,6 +1,6 @@
 ---
 title: React – The Future Of Web Frontend
-tags: [ReactJS, javscript, typescript, HTML, CSS ]
+tags: [reactjs, javascript, typescript, html, css ]
 date: 2019-01-07T05:25:44.226Z
 path: blog/react–the-future-of-web-frontend
 cover: ./preview.png

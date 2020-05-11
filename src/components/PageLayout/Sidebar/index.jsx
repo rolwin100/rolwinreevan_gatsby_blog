@@ -57,11 +57,6 @@ const DomContent = () => (
             <span className={style.emailHider}>@</span>
           </a>
         </li>
-        <li className={`${style.contactBlockItem}`}>
-          <span><FeatherIcon size="19" icon="smartphone" /></span>
-          {' '}
-&nbsp; &nbsp; +91 8762132929
-        </li>
       </ul>
       <div className={style.resumeDownload}>
         <a href="../resume.pdf" download target="_blank">Download CV</a>
