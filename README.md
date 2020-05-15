@@ -1,16 +1,11 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://rolwinreevan.com">
-    <img alt="Gatsby" src="https://github.com/rolwin100/rolwinreevan_gatsby_blog/blob/master/src/images/icon.png" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's RolwinReevan Portfolio template using <a href='https://ant.design/' target='_blank'>ant-design</a>
-</h1>
-<h3 align="center">Probably the most beautiful 😍 gatsby starter template</h3>
+# Mehd.io website
 
-This starter consists of ant design system you can use it for your personal blog. I have give a lot of time in developing this starter because I found that there were not much starters with a very good design. Please give a star to this project if you have like it to encourage me 😄. Thank you.
+This personal website is based from the starter of <a href='https://github.com/rolwin100/rolwinreevan_gatsby_blog' target='_blank'>rolwin100</a>
 
+Feature :
+* React & Gatsby
+* Ant Design
 
 ## 🚀 Quick start
 
@@ -20,8 +15,8 @@ This starter consists of ant design system you can use it for your personal blog
 
     ```shell
     
-    git clone https://github.com/rolwin100/rolwinreevan_gatsby_blog.git
-    cd rolwinreevan_gatsby_blog 
+    git clone https://github.com/mehd-io/mehd-io-website
+    cd mehd-io-website 
     npm install
     ```
 

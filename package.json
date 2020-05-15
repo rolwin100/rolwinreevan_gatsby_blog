@@ -1,5 +1,5 @@
 {
-  "name": "rolwinreevan_gatsby_blog",
+  "name": "mehd-io-website",
   "private": true,
   "description": "the most beautiful gatsby template ever designed using antd",
   "version": "0.1.0",
@@ -58,6 +58,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rolwin100/rolwinreevan_gatsby_blog"
+    "url": "https://github.com/mehd-io/mehd-io-website"
   }
 }
