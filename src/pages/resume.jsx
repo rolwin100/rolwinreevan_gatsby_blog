@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Document, Page } from 'react-pdf';
 import { Button, Row, Col } from 'antd';
+import SEO from '../components/Seo';
 
 export default class Resume extends Component {
   constructor() {
@@ -29,6 +30,13 @@ export default class Resume extends Component {
 
     return (
       <div>
+        <SEO
+          title="Resume"
+          description="My resume consists of my biodata of experience. You can hire me if you feel
+          I'm good for any position in your organization. I'm open to various challenges that come
+          in the way of building various web applications."
+          path="resume"
+        />
         <Document
           file="../resume.pdf"
           onLoadSuccess={this.onDocumentLoadSuccess}
