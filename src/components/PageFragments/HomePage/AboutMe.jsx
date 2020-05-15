@@ -5,16 +5,9 @@ import { stripTags, domHtml } from '../../../utils/stripTags';
 import SEO from '../../Seo';
 
 const pageText = {
-  paraOne: `Hello !! My name is Rolwin Reevan Monteiro. I'm a full stack web developer who is
-    passionate about various web technologies. I like to experiment with different web
-    technologies. I have an experience of nearly 3 years working with LAMP stack, MERN stack
-    and ELK stack. Building fancy UI's just like this one that your seeing 😅 and writing blogs about tech stacks
-    is what Rolwin loves to do. Check my blog which I update every week for some Javascript and some 
-    cool notes on web technologies.`,
-  paraTwo: `Currently I work mostly with Javascript technologies like ReactJS and NodeJS. I also
-    have hands on experience working with cloud infrastructures <b>AWS/GCP</b> and have deployed applications
-    keeping scalability in mind. Docker, Kubernetes, Jenkins, SonarQube are some of the cool
-    tools I use for <b>CI/ CD</b>. I'm always a learner and a self taught programmer.`,
+  paraOne: `I’m a data geek entrepreneur who’s passionate about Big data, Data science, Web App and Music. I’m convinced that the best data scientists/engineer get out and talk to people, so I enjoy sharing ideas with business.
+  `,
+  paraTwo: `With a background in BI and data warehousing, I have gained experience on Big Data technologies (Hadoop, Spark, Kafka, etc) but investing my time to improve my analytics skills (statistical analysis and machine learning). I always keep my feet on the ground and take some times to do technology watch : continous learning is my motto. I’m also a startup entrepreneur and meetup lover : sharing is training.`,
 };
 const AboutMe = () => {
   const description = `${pageText.paraOne} ${stripTags(pageText.paraTwo)}`;
@@ -25,7 +18,7 @@ const AboutMe = () => {
           title="About"
           description={description}
           path=""
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
+          keywords={['Mehdi', 'Ouazza', 'Berlin', 'data engineer', 'Python', 'Spark', 'Big data']}
         />
         <h1 className="titleSeparate">About Me</h1>
         <p>
@@ -33,58 +26,30 @@ const AboutMe = () => {
         </p>
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
       </div>
-      <Row gutter={[20, 20]}>
+      <Row gutter={[10, 10]}>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="location.png"
+            img="undraw_code_thinking_1jeh.svg"
             height={60}
-            alt="location image"
-            textH4="Born and bought up in"
-            textH3="Mangalore, KA, India"
+            alt="coding"
+            textH4="Entrepreuneur and coder"
+            textH3="passionate"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="coffee.png"
-            alt="coffee image"
-            textH4="Love Coffee"
-            textH3="Coffee + Me = Happiness"
+            img="undraw_happy_music_g6wc.svg"
+            alt="music"
+            textH4="Musician"
+            textH3="Let it sing"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
-            img="meeting.png"
-            alt="meeting image"
-            textH4="Socially Awkward"
-            textH3="At times"
-          />
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
-          <AboutTile
-            img="motorcycle.png"
-            alt="motorcycle image"
-            textH4="Love Riding"
-            textH3="Biker for life"
-          />
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
-          <AboutTile
-            img="web.png"
-            alt="web image"
-            textH4="Self Taught Programmer"
-            textH3="Thanks to the Web Resources"
-            height={60}
-            width={60}
-          />
-        </Col>
-        <Col xs={24} sm={24} md={12} lg={8}>
-          <AboutTile
-            img="graduation.png"
-            alt="graduation image"
-            textH4="Pursued B.Tech in"
-            textH3="Computer Science"
-            height={60}
-            width={60}
+            img="undraw_play_time_7k7b.svg"
+            alt="family"
+            textH4="Father and Husband"
+            textH3="When away from my keyboard"
           />
         </Col>
       </Row>
