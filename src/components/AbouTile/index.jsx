@@ -10,14 +10,14 @@ const AboutTile = (props) => {
       <div className={style.aboutBlock}>
         <img
           src={`../${img}`}
-          height={height || 64}
-          width={width || 64}
+          height={height || 80}
+          width={width || 80}
           alt={alt || ''}
         />
       </div>
       <div className={`textCenter ${style.mrTp26PX}`}>
-        <h4>{ textH4 || ''}</h4>
         <h3>{textH3 || '' }</h3>
+        <h4>{ textH4 || ''}</h4>
       </div>
     </div>
   );

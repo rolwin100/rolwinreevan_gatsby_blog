@@ -30,26 +30,25 @@ const AboutMe = () => {
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="undraw_code_thinking_1jeh.svg"
-            height={60}
             alt="coding"
-            textH4="Entrepreuneur and coder"
-            textH3="passionate"
+            textH3="Entrepreuneur and coder"
+            textH4="passionate"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="undraw_happy_music_g6wc.svg"
             alt="music"
-            textH4="Musician"
-            textH3="Let it sing"
+            textH3="Musician"
+            textH4="Let it sing"
           />
         </Col>
         <Col xs={24} sm={24} md={12} lg={8}>
           <AboutTile
             img="undraw_play_time_7k7b.svg"
             alt="family"
-            textH4="Father and Husband"
-            textH3="When away from my keyboard"
+            textH3="Father and Husband"
+            textH4="When away from my keyboard"
           />
         </Col>
       </Row>
