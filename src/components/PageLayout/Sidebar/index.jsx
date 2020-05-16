@@ -2,17 +2,18 @@ import React from 'react';
 import {
   Affix, Layout, Row, Col,
 } from 'antd';
-import FA from 'react-fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FeatherIcon from 'feather-icons-react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { globalHistory } from '@reach/router';
 import style from './sidebar.module.less';
 import { useWindowSize } from '../../../utils/hooks';
 import Config from '../../../../config';
+import { faTwitter, faGithub, faLinkedin, faMedium, faSpotify } from '@fortawesome/free-brands-svg-icons'
 
 const { Content } = Layout;
 const {
-  github, linkedin, twitter, medium
+  github, linkedin, twitter, medium, spotify
 } = Config.social;
 
 const DomContent = () => (
@@ -21,17 +22,18 @@ const DomContent = () => (
     <div className={`${style.name} centerAlign`}>
       <div className={`${style.boxName} centerAlign`}>
         <h2>
-          Mehdi 
+          Mehdi
           {' '}
           <span>OUAZZA</span>
         </h2>
       </div>
       <div className={`${style.badge} ${style.badgeGray}`}>Data Engineer</div>
-      <div className="centerAlign box">
-        <a href={twitter} target="_blank" label="button" rel="noopener noreferrer"><FA name="twitter" /></a>
-        <a href={github} target="_blank" label="button" rel="noopener noreferrer"><FA name="github" /></a>
-        <a href={linkedin} target="_blank" label="button" rel="noopener noreferrer"><FA name="linkedin" /></a>
-        <a href={medium} target="_blank" label="button" rel="noopener noreferrer"><FA name="medium" /></a>
+      <div className={`centerAlign box ${style.iconeBox}`}>
+        <div className={style.icone}><a href={github} target="_blank" label="button" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> </a></div>
+        <div className={style.icone}><a href={linkedin} target="_blank" label="button" rel="noopener noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a></div>
+        <div className={style.icone}><a href={medium} target="_blank" label="button" rel="noopener noreferrer"><FontAwesomeIcon icon={faMedium} /> </a></div>
+        <div className={style.icone}><a href={twitter} target="_blank" label="button" rel="noopener noreferrer" ><FontAwesomeIcon icon={faTwitter} /></a></div>
+        <div className={style.icone}><a href={spotify} target="_blank" label="button" rel="noopener noreferrer" ><FontAwesomeIcon icon={faSpotify} /></a></div>
       </div>
       <ul className={`box ${style.badge} contactBlock`}>
         <li className={`${style.contactBlockItem}`}>
@@ -54,8 +56,8 @@ const DomContent = () => (
       <div className={style.resumeDownload}>
         <a href="../resume_270518.pdf" download target="_blank">Download CV</a>
       </div>
-    </div>
-  </aside>
+    </div >
+  </aside >
 );
 
 
@@ -83,11 +85,11 @@ const Sidebar = (props) => {
         <Content className={`${style.content} ${style.background}`}>
           <Row>
             <Col sm={24} md={9} lg={6} className={style.sidebarContent}>
-              { domContent }
+              {domContent}
             </Col>
             <Col sm={24} md={15} lg={18}>
               <Layout className={`${style.background} ${style.boxContent} borderRadiusSection`}>
-                { children }
+                {children}
               </Layout>
             </Col>
           </Row>
