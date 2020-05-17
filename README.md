@@ -6,6 +6,7 @@ This personal website is based from the starter of <a href='https://github.com/r
 Feature :
 * React & Gatsby
 * Ant Design
+* Beautiful Opensource illustration from <a href='https://undraw.co/' target='_blank'>undraw.co</a>
 
 ## 🚀 Quick start
 
