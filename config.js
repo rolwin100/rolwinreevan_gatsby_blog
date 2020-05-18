@@ -23,11 +23,8 @@ module.exports = {
   contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || 'https://getform.io/f/09a3066f-c638-40db-ad59-05e4ed71e451',
   googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '',
   tags: {
-    angular: {
-      description: 'Angular is an open source web application platform.',
-      color: '#dd3431',
-    },
     javascript: {
+      name: 'javascript',
       description: 'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.',
       color: '#f0da50',
     },
@@ -42,10 +39,12 @@ module.exports = {
       color: '#eb428e',
     },
     typescript: {
+      name: 'typescript',
       description: 'TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.',
       color: '#257acc',
     },
     reactjs: {
+      name: 'reactjs',
       description: 'React is an open source JavaScript library used for designing user interfaces.',
       color: '#61dbfa',
     },

@@ -1,40 +1,36 @@
 import React from 'react';
-
+import { Link } from 'gatsby';
+import Config from '../../../config';
+import Utils from '../../utils/pageUtils';
+import style from './tags.module.less';
 
 const TagCard = (props) => {
   const {
     img, name, description, color,
   } = props;
+  const tagPage = Config.pages.tag;
   return (
-    <div style={{
-      marginTop: '20px',
-      borderRadius: '20px',
-      minHeight: '22rem',
-      boxShadow: 'rgba(167, 167, 167, 0.22) -1px 4px 9px 3px',
-    }}
-    >
-      <div style={{
-        width: '100%',
-        height: '164px',
-        backgroundRepeat: 'no-repeat',
-        backgroundPosition: 'center',
-        borderRadius: '20px 20px 0 0',
-        backgroundSize: 'cover',
-        backgroundImage: `url(${img})`,
-      }}
-      />
-      <div style={{ padding: '20px' }}>
-        <div style={{ textAlign: 'center' }}>
-          <h4 style={{ color: `${color}` }}>
-            #
-            {name}
-          </h4>
+    <Link className={style.tagCard} to={Utils.resolvePageUrl(tagPage, name)}>
+      <div className={style.tagCard}>
+        <div
+          className={style.tagImg}
+          style={{
+            backgroundImage: `url(${img})`,
+          }}
+        />
+        <div className={style.pd20px}>
+          <div className="textCenter">
+            <h4 style={{ color: `${color}` }}>
+              #
+              {name}
+            </h4>
+          </div>
+          <p>
+            {description}
+          </p>
         </div>
-        <p>
-          {description}
-        </p>
       </div>
-    </div>
+    </Link>
   );
 };
 

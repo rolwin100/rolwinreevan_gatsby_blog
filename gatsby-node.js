@@ -43,6 +43,30 @@ exports.createPages = ({ actions, graphql }) => {
         },
       });
     });
+    const regexForIndex = /index\.md$/;
+    // Posts in default language, excluded the translated versions
+    const defaultPosts = allMarkdownRemark.edges
+      .filter(({ node: { fileAbsolutePath } }) => fileAbsolutePath.match(regexForIndex));
+
+    /* Tag pages */
+    const allTags = [];
+    defaultPosts.forEach(({ node }) => {
+      node.frontmatter.tags.forEach((tag) => {
+        if (allTags.indexOf(tag) === -1) allTags.push(tag);
+      });
+    });
+
+    allTags
+      .forEach((tag) => {
+        createPage({
+          path: utils.resolvePageUrl(config.pages.tag, tag),
+          component: path.resolve('src/templates/tags/index.jsx'),
+          context: {
+            tag,
+          },
+        });
+      });
+
     return 1;
   });
 };

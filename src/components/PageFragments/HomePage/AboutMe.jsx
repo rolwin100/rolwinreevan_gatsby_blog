@@ -12,7 +12,7 @@ const pageText = {
     is what Rolwin loves to do. Check my blog which I update every week for some Javascript and some 
     cool notes on web technologies.`,
   paraTwo: `Currently I work mostly with Javascript technologies like ReactJS and NodeJS. I also
-    have hands on experience working with cloud infrastructures <b>AWS/GCP</b> and have deployed applications
+    have hands on experience working with cloud infrastructures like <b>AWS/GCP</b> and have deployed applications
     keeping scalability in mind. Docker, Kubernetes, Jenkins, SonarQube are some of the cool
     tools I use for <b>CI/ CD</b>. I'm always a learner and a self taught programmer.`,
 };
