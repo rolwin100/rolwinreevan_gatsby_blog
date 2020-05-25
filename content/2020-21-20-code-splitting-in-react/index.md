@@ -11,7 +11,7 @@ Code splitting is an awesome feature of webpack that can be used to split your c
 
 ## Code splitting in React
 
-Suppose you are loading a library we use a `import` statement on the top of your file telling our code that some dependency is neededik. The example below shows how an import works.
+Suppose you are loading a library we use an `import` statement on the top of your file telling our code that some dependency is needed. The example below shows how an import works.
 
 ```javascript
 /**
@@ -40,8 +40,8 @@ When webpack comes across this code it automatically starts code splitting.
 
 ## Lazy loading a component in React
 
-Suppose we want to do a code splitting for a component in `React` we do it with `React.lazy` api.
-Example below shows how to make a component Lazy loaded.
+Suppose we want to do a code splitting for a component in `React` we do it with `React.lazy` API.
+The example below shows how to make a component Lazy loaded.
 
 ```javascript
 
@@ -56,7 +56,7 @@ The component will be loaded only when it will be needed from the server.
 
 ## Using a Lazy Loaded component with React.Suspense
 
-Suppose we are using a lazy loaded component we need to wrap it with `React.Suspense`. 
+Suppose we are using a lazy-loaded component we need to wrap it with `React.Suspense`. 
 
 React 16.6 added a `<Suspense>` component that lets you “wait” for some code to load and declaratively specify a loader or some skeleton while we’re waiting. `React.Suspense` is just like the Error boundaries which we use for our `React` apps.
 
@@ -75,9 +75,9 @@ function App () {
 ```
 When the `<AuthComponent/>` is loaded from the server `loading...` is displayed till it's finished loading the component.
 
-## When to use React.Lazy & React.Suspense to perform code splitting?
+## When to use React.lazy & React.Suspense to perform code splitting?
 
-It can be very tricky to decide when to perform code splitting in a application. Some of the most common use cases I can think of is 
+It can be very tricky to decide when to perform code splitting in an application. Some of the most common use cases I can think of is 
 
 1. Code splitting for page Routes.
 2. Opening a popup model
