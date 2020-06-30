@@ -2,13 +2,14 @@ import React from 'react';
 import moment from 'moment';
 import { Link } from 'gatsby';
 import style from './postCard.module.less';
+import Utils from '../../utils/pageUtils';
 
 const PostCard = (props) => {
   const { data: { node: { frontmatter } } } = props;
 
   return (
     <div className={style.postCard}>
-      <Link to={frontmatter.path}>
+      <Link to={Utils.resolvePageUrl(frontmatter.path)}>
         <div
           className={style.postCardImg}
           style={{

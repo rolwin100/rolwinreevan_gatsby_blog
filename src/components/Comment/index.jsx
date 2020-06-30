@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 /* Vendor imports */
 import React from 'react';
 import PropTypes from 'prop-types';
