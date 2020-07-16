@@ -6,13 +6,8 @@ module.exports = [
   'gatsby-plugin-sharp',
   'gatsby-plugin-less',
   'gatsby-plugin-offline',
-  {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      name: 'images',
-      path: `${__dirname}/src/images`,
-    },
-  },
+  'gatsby-tinacms-json',
+  'gatsby-transformer-json',
   {
     resolve: 'gatsby-plugin-manifest',
     options: {
@@ -32,6 +27,20 @@ module.exports = [
     options: {
       name: 'markdown-pages',
       path: `${__dirname}/content`,
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'images',
+      path: `${__dirname}/src/images`,
+    },
+  },
+  {
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      name: 'cmsData',
+      path: `${__dirname}/cms`,
     },
   },
   {
@@ -100,6 +109,20 @@ module.exports = [
       color: 'black',
       // Disable the loading spinner.
       showSpinner: true,
+    },
+  },
+  {
+    resolve: 'gatsby-plugin-tinacms',
+    options: {
+      enabled: process.env.NODE_ENV !== 'production',
+      sidebar: {
+        position: 'overlay',
+      },
+      plugins: [
+        // We'll add some Tinacms plugins in the next step.
+        'gatsby-tinacms-remark',
+        'gatsby-tinacms-git',
+      ],
     },
   },
 ];

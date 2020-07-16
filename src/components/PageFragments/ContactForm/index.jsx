@@ -4,7 +4,6 @@ import {
 import React from 'react';
 import Config from '../../../../config';
 
-
 const validateMessages = {
   required: 'This field is required!',
   types: {

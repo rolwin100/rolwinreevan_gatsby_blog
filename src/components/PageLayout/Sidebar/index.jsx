@@ -65,7 +65,6 @@ const DomContent = () => (
   </aside>
 );
 
-
 const Sidebar = (props) => {
   const [width] = useWindowSize();
   const { children } = props;

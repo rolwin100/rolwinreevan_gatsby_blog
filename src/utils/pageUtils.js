@@ -1,3 +1,4 @@
+/* eslint-disable no-param-reassign */
 const Config = require('../../config');
 
 const Utils = {
@@ -9,10 +10,11 @@ const Utils = {
   resolveUrl: (...paths) => paths.reduce((resolvedUrl, path) => {
     const urlPath = path.toString().trim();
     if (urlPath) {
-      // eslint-disable-next-line no-param-reassign
       resolvedUrl
           += (resolvedUrl === '' ? '' : '/') + urlPath.replace(/^\/|\/$/g, '');
     }
+
+    resolvedUrl = resolvedUrl[0] !== '/' ? `/${resolvedUrl}` : resolvedUrl;
     return resolvedUrl;
   }, ''),
   /**
@@ -23,7 +25,7 @@ const Utils = {
    */
   resolvePageUrl: (...path) => {
     const resolvedUrl = Utils.resolveUrl(...path);
-    return `${resolvedUrl}/`;
+    return resolvedUrl;
   },
   /**
    * Get an ordered list of suggested posts for a single post.

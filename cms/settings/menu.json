@@ -1,20 +1,24 @@
 {
   "menuItems": [
     {
-      "label": "Home",
+      "label": "About",
       "link": "/"
     },
     {
-      "label": "About",
-      "link": "/about"
+      "label": "Contact",
+      "link": "/contact"
     },
     {
       "label": "Blog",
       "link": "/blog"
     },
     {
-      "label": "Contact",
-      "link": "/contact"
+      "label": "Tags",
+      "link": "/tags"
+    },
+    {
+      "label": "Resume",
+      "link": "/resume"
     }
   ]
 }

@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 /* Vendor imports */
 import React from 'react';
 import PropTypes from 'prop-types';
