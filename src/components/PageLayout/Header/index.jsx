@@ -44,6 +44,8 @@ export default () => {
           <ul className={style.nav}>
             {
               navData.settingsJson.menuItems.map((item) => (
+                item.link
+                && (
                 <li key={item.label} className={style.navItem}>
                   <Link
                     to={Utils.resolvePageUrl(item.link)}
@@ -53,6 +55,7 @@ export default () => {
                     { item.label }
                   </Link>
                 </li>
+                )
               ))
             }
           </ul>
