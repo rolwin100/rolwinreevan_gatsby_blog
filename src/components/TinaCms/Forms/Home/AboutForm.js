@@ -1,27 +1,27 @@
-const data = require('../../../../../cms/pages/home.json');
-
 const AboutForm = {
   id: 'aboutForm',
-  label: 'About Form',
+  key: 'aboutForm',
+  label: 'About',
   fields: [
     {
-      name: 'para1',
-      label: 'para1',
-      component: 'markdown',
-    },
-    {
-      name: 'para2',
-      label: 'para2',
-      component: 'markdown',
+      key: 'about',
+      name: 'rawJson.aboutBlock',
+      label: 'About Section',
+      component: 'group',
+      fields: [
+        {
+          name: 'title',
+          component: 'text',
+          label: 'Title',
+        },
+        {
+          name: 'about',
+          component: 'html',
+          label: 'About',
+        },
+      ],
     },
   ],
-  initialValues: {
-    para1: data.about.para1,
-    para2: data.about.para2,
-  },
-  onSubmit: (formData) => {
-    // save the new form data
-    console.log(formData);
-  },
 };
+
 export default AboutForm;
