@@ -117,6 +117,7 @@ module.exports = [
       enabled: process.env.NODE_ENV !== 'production',
       sidebar: {
         position: 'overlay',
+        hidden: process.env.NODE_ENV === 'production',
       },
       plugins: [
         // We'll add some Tinacms plugins in the next step.
