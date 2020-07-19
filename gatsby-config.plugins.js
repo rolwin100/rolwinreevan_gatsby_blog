@@ -116,7 +116,7 @@ module.exports = [
     options: {
       enabled: process.env.NODE_ENV !== 'production',
       sidebar: {
-        position: 'overlay',
+        position: 'displace',
         hidden: process.env.NODE_ENV === 'production',
       },
       plugins: [
