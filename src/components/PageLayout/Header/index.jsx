@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 import { Layout } from 'antd';
 import 'font-awesome/less/font-awesome.less';
 import style from './header.module.less';
 import '../../../styles/global.less';
 import { useWindowSize } from '../../../utils/hooks';
-import { DataWrapper } from '../../TinaCms/DataWrapper';
-import Utils from '../../../utils/pageUtils';
 
 export default () => {
   const [menu, setMenu] = useState(false);
@@ -21,17 +19,8 @@ export default () => {
       }
     }
   };
-
-  const navData = useStaticQuery(graphql`
-    query navQuery {
-      settingsJson(fileRelativePath: { eq: "/cms/settings/menu.json" }) {
-        ...nav
-      }
-    }
-  `);
-
   return (
-    <DataWrapper>
+    <>
       <div className={style.circleMenu} role="button" tabIndex="0" onKeyDown={toggleMenu} onClick={toggleMenu}>
         <div className={`${style.hamburger} ${menu ? style.menuIcon : null}`}>
           <div className={style.line} />
@@ -42,25 +31,34 @@ export default () => {
       <Layout className={`${style.navWrap} ${menu ? null : style.hidden} ${menu ? style.openMenu : null}`}>
         <div className={style.backgroundDiv}>
           <ul className={style.nav}>
-            {
-              navData.settingsJson.menuItems.map((item) => (
-                item.link
-                && (
-                <li key={item.label} className={style.navItem}>
-                  <Link
-                    to={Utils.resolvePageUrl(item.link)}
-                    onClick={toggleMenu}
-                    activeClassName={style.anchorActive}
-                  >
-                    { item.label }
-                  </Link>
-                </li>
-                )
-              ))
-            }
+            <li className={style.navItem}>
+              <Link to="/" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                About
+              </Link>
+            </li>
+            <li className={style.navItem}>
+              <Link to="/contact" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                Contact
+              </Link>
+            </li>
+            <li className={style.navItem}>
+              <Link to="/blog" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                Blog
+              </Link>
+            </li>
+            <li className={style.navItem}>
+              <Link to="/tags" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                Tags
+              </Link>
+            </li>
+            <li className={style.navItem}>
+              <Link to="/resume" onClick={toggleMenu} activeClassName={style.anchorActive}>
+                Resume
+              </Link>
+            </li>
           </ul>
         </div>
       </Layout>
-    </DataWrapper>
+    </>
   );
 };

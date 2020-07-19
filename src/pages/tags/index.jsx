@@ -1,3 +1,4 @@
+/* eslint-disable react/forbid-prop-types */
 import React from 'react';
 import {
   Layout, Row, Col,
@@ -75,7 +76,6 @@ Tags.propTypes = {
           node: PropTypes.shape({
             name: PropTypes.string.isRequired,
             childImageSharp: PropTypes.shape({
-              // eslint-disable-next-line react/forbid-prop-types
               fluid: PropTypes.object.isRequired,
             }).isRequired,
           }).isRequired,

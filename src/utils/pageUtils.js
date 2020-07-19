@@ -10,6 +10,7 @@ const Utils = {
   resolveUrl: (...paths) => paths.reduce((resolvedUrl, path) => {
     const urlPath = path.toString().trim();
     if (urlPath) {
+      // eslint-disable-next-line no-param-reassign
       resolvedUrl
           += (resolvedUrl === '' ? '' : '/') + urlPath.replace(/^\/|\/$/g, '');
     }
