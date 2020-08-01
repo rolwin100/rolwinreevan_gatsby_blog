@@ -10,6 +10,7 @@ const ProgressBar = (props) => {
           percent={percent || 0}
           strokeWidth={22}
           status="active"
+          trailColor="#2b3c57"
         />
       </div>
       <div style={{
