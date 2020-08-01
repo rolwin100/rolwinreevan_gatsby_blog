@@ -2,48 +2,83 @@ import React from 'react';
 import { Row, Col } from 'antd';
 import ProgressBar from '../../Progress';
 
-const SkillsProgress = () => (
+const SkillsProgress = ({
+  javascript, reactjs, gatsby, nodejs, python, mysql, mongodb, wordpress, shell, docker
+}) => (
   <div>
-    <h2>My Skills</h2>
-    <Row gutter={[20, 20]}>
-      <Col xs={24} sm={24} md={12}>
+    {/* <h2>My Skills</h2> */}
 
-        <ProgressBar
-          percent={80}
-          text="Javascript"
-        />
-        <ProgressBar
-          percent={95}
+        {
+          javascript && <ProgressBar
+            percent={parseInt(javascript)}
+            text="Javascript"
+          />
+        }
+
+        {
+          reactjs && <ProgressBar
+          percent={parseInt(reactjs)}
           text="ReactJS"
         />
-        <ProgressBar
-          percent={85}
+        }
+
+        {
+          gatsby && <ProgressBar
+          percent={parseInt(gatsby)}
           text="Gatsby"
-        />
-        <ProgressBar
-          percent={90}
-          text="NodeJS"
-        />
-      </Col>
-      <Col xs={24} sm={24} md={12}>
-        <ProgressBar
-          percent={70}
-          text="Python"
-        />
-        <ProgressBar
-          percent={90}
+        /> 
+        }
+        
+        {
+          nodejs && <ProgressBar
+            percent={parseInt(nodejs)}
+            text="NodeJS"
+          /> 
+        }
+
+        
+        {
+          python && <ProgressBar
+            percent={parseInt(python)}
+            text="Python"
+          /> 
+        }
+
+        {
+          mysql && <ProgressBar
+          percent={parseInt(mysql)}
           text="Mysql"
         />
-        <ProgressBar
-          percent={78}
-          text="MongoDB"
-        />
-        <ProgressBar
-          percent={80}
-          text="Wordpress"
-        />
-      </Col>
-    </Row>
+        }
+        
+        { 
+          mongodb && <ProgressBar
+            percent={parseInt(mongodb)}
+            text="MongoDB"
+          />
+        }
+        
+        {
+          wordpress && <ProgressBar
+            percent={parseInt(wordpress)}
+            text="Wordpress"
+          />
+        }
+
+        {
+          shell && <ProgressBar
+            percent={parseInt(shell)}
+            text="Shell"
+          />
+        }
+
+        {
+          docker && <ProgressBar
+            percent={parseInt(docker)}
+            text="Docker"
+          />
+        }
+        
   </div>
 );
 

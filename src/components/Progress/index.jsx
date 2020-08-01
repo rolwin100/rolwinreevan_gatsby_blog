@@ -4,7 +4,7 @@ import { Progress } from 'antd';
 const ProgressBar = (props) => {
   const { text, percent } = props;
   return (
-    <div style={{ marginTop: '20px' }}>
+    <div style={{ marginTop: '5px' }}>
       <div>
         <Progress
           percent={percent || 0}
