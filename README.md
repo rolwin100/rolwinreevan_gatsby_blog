@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 # Mehd.io website
 
-This personal website is based from the starter of <a href='https://github.com/rolwin100/rolwinreevan_gatsby_blog' target='_blank'>rolwin100</a>
+This personal website https://mehd.io/ is based from the starter of <a href='https://github.com/rolwin100/rolwinreevan_gatsby_blog' target='_blank'>rolwin100</a>
 
 Feature :
 * React & Gatsby

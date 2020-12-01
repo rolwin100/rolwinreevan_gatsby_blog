@@ -4,7 +4,7 @@ tags: [ docker, datascience, spark, bigdata ]
 date: 2017-01-23T05:25:44.226Z
 path: blog/docker-and-datascience
 cover: ./cover.jpeg
-excerpt: Let's talk about promises in javascript. What exactly is a promise in javascript and how to handle promises. This article will talk about the different methods to resolve promises.  
+excerpt: Data science and docker  
 ---
 
 I've been using Docker for web app side projects and now quite often on my data science job. As always, there are pros and cons and I wanted to share my list of use cases in data science context, so here we go!
