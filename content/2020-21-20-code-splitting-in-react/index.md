@@ -7,7 +7,7 @@ cover: ./codesplitting.png
 excerpt: Suppose the bundle size of your project is very huge and you don't want to load everything at once during the initial render you can use code splitting along with React to improve the performance and load time of your application.
 ---
 
-Code splitting is an awesome feature of webpack that can be used to split your code into smaller bundles and can be loaded when necessary or in parallel. If this feature is used properly it can have a very huge impact on the performance improvement of your application. You can look more about code splitting [here](https://webpack.js.org/guides/code-splitting/) in the official webpack documentation.
+Code splitting is an awesome feature of webpack that can be used to split your code into smaller bundles and can be loaded when necessary or in parallel. If this feature is used properly it can have a very huge impact on the performance improvement of your application. You can look more into code splitting [here](https://webpack.js.org/guides/code-splitting/) in the official webpack documentation.
 
 ## Code splitting in React
 
@@ -25,7 +25,7 @@ console.log(Average([0,1,4,3,2]));
 
 The sad part is all `import` statements have to be written on the top of your file. This creates a problem that all dependencies will be loaded at the beginning itself increasing the load time.
 
-In React we can handle this a bit differently. We can load that code only when required. This is called as code splitting. The example above can be written with code splitting as follows.
+In React we can handle this a bit differently. We can load that code only when required. This is called code splitting. The example above can be written with code splitting as follows.
 
 ```javascript
 /**
