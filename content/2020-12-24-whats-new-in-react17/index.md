@@ -21,3 +21,24 @@ With React 17 you can do gradual React updates. You can update the entire app fr
 
 React 17 provides two options to upgrade your app to the next version of React, say React 18. Either you can upgrade your entire app at once or migrate your app piece by piece.
 
+## How is it possible to embed different versions of react with React 17 ?
+
+In React 17 changes have been made to event delegation. It was possible even before to embed multiple versions of React inside a DOM tree but it was a very delicate move considering how the React event system worked.
+
+In React we write a click event like:
+
+```javascript
+
+    <button onClick={handleClick}>
+
+```
+
+This event does not attach itself to the document node on which it is written rather it attaches itself to the document root in React 16 and previous versions of React. In React 17 the event is attached to the root dom container. The below diagram shows us how the event progation works in React 16 vs React 17.
+
+
+![](./react_17_delegation.png)
+
+
+
+
+This is why we can nest muliple versions of React in React 17.
