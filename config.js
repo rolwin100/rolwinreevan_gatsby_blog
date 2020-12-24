@@ -34,11 +34,6 @@ module.exports = {
       description: 'Node.js is a tool for executing JavaScript in a variety of environments.',
       color: '#90c53f',
     },
-    rxjs: {
-      name: 'RxJS',
-      description: 'RxJS is a library for reactive programming using Observables, for asynchronous operations.',
-      color: '#eb428e',
-    },
     typescript: {
       name: 'typescript',
       description: 'TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.',
