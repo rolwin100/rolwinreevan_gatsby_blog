@@ -1,0 +1,33 @@
+{
+	"name": "Node.js & TypeScript",
+	"build": {
+		// Update 'VARIANT' to pick a Node version: 10, 12, 14
+		"dockerfile": "../docker/dev.Dockerfile",
+		"context": "..",
+		"args": { 
+			"VARIANT": "14"
+		
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/zsh",
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode",
+		"eamodio.gitlens"
+	],
+
+	"postCreateCommand": "yarn install && npm install firebase-tools -g",
+
+	"forwardPorts": [3000],
+
+	"mounts": [
+		"source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
+		"source=${localEnv:HOME}/.config,target=/root/.config,type=bind,consistency=cached"
+	  ]
+}
