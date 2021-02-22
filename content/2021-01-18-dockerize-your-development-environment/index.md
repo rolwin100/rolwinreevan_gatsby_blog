@@ -7,10 +7,6 @@ cover: ./cover.jpeg
 excerpt: Devcontainer in VS Code 
 ---
 
-# Why and how you should dockerize your development environment (with VS Code 💙)
-
-![](https://cdn-images-1.medium.com/max/880/1*1t0AmEiZMt0L3cvym1JB7Q.jpeg)
-
 In this blog post, I will cover a few elements that should **motivate you to
 dockerize your development environment** and give you a repo example on **how
 you can smoothly achieve this with VS Code**. The idea here goes further than

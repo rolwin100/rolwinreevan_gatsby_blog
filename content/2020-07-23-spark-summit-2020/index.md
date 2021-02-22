@@ -7,10 +7,6 @@ cover: ./cover.jpeg
 excerpt: Let's talk about spark summit 2020  
 ---
 
-# Highlights from Spark+AI Summit 2020 for Data engineers
-
-Copyright Databricks
-
 Originally called “Spark Summit” and now drifting to AI (to follow the hype of course), the summit, organized by [Databricks](undefined)(founder of Spark, Delta, MLflow) brings together all top tech companies with mature experience in **data science and data engineering **with more than **200 sessions. **So even if you are not a spark-fan boy (no, I won't talk about spark 3.0), there’s a lot to learn from this event. Bonus this year: the event was online and free and as usual, all talks+slides are available [here](https://databricks.com/sparkaisummit/north-america-2020/agenda).
 
 In these takeaways focusing on the **data engineering topics**, I'll provide as resources, the **most interesting talks** I've seen for each highlight and some **extra bonus links**. Each highlight could be a dedicated article on its own, the idea here is to regroup a *curated list* for anyone that would like to be up to date with the latest data engineer news in 2020.
