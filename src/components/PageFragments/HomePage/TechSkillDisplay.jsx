@@ -21,7 +21,7 @@ const TechSkillDisplay = () => (
         />
         <TechSkill
           textH3="Data"
-          textH4="Spark • Kafka • Hive • Presto • Postgres"
+          textH4="Spark • Kafka • Hive • Presto • Postgres • Airflow • DBT • Pandas"
           icon={<DatabaseOutlined />}
         />
       </Col>
