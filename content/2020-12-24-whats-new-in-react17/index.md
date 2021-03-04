@@ -1,6 +1,6 @@
 ---
 title: What's new in React 17 ( No new features )
-tags: [ html, css, reactjs ]
+tags: [ reactjs ]
 date: 2020-12-24T05:25:44.226Z
 path: blog/react17-new-features
 cover: ./react17.png
@@ -69,7 +69,7 @@ The above code will turn into
 import { jsx as _jsx } from "react/jsx-runtime";
 
 function MyComponent() {
-  return _jsx("div", "some text man");
+  return _jsx("div", `"some text man"`);
 }
 
 ```
