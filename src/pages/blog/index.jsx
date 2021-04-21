@@ -14,9 +14,8 @@ const Blog = ({ data }) => (
       <Header />
       <SEO
         title="Blog"
-        description="I like blogging about various web technologies and other stuff related to
-          javascript and other trends like graphql, prisma etc. This blog expresses my views of various technologies
-          and scenarios I have come across in realtime."
+        description="I like blogging about various data engineer, web technologies and leadership. This blog expresses my views of various technologies
+          and scenarios I have come across through my experience"
         path="blog"
       />
       <SidebarWrapper>
@@ -25,10 +24,10 @@ const Blog = ({ data }) => (
         </div>
         <Row gutter={[20, 20]}>
           {
-            data.allMarkdownRemark && data.allMarkdownRemark.edges.map((val, key) => (
+            data.allMediumPost.edges.map(({ node }) => (
               // eslint-disable-next-line react/no-array-index-key
-              <Col key={key} xs={24} sm={24} md={12} lg={8}>
-                <PostCard data={val} />
+              <Col xs={24} sm={24} md={12} lg={8}>
+                <PostCard data={node} />
               </Col>
             ))
           }
@@ -48,28 +47,26 @@ Blog.propTypes = {
 
 export const query = graphql`
   {
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { fileAbsolutePath: { regex: "/index.md$/" } }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            date
-            path
+    allMediumPost(sort: { fields: [createdAt], order: DESC }, limit: 4) {
+        edges {
+          node {
+            id
             title
-            tags
-            excerpt
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 288) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
+            updatedAt
+            virtuals {
+              subtitle
+              tags {
+                name
+              }
+              totalClapCount
+              previewImage {
+                imageId
               }
             }
+            medium_id
+            slug
           }
         }
-      }
     }
   }
 `;

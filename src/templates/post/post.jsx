@@ -23,7 +23,7 @@ const Post = ({ data }) => {
           title={title}
           description={excerpt}
           path={path}
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
+          keywords={['Mehdi', 'OUAZZA', 'data engineer', 'FullStack developer', 'Spark', 'Data', 'technology']}
         />
         <Header />
         <SidebarWrapper>
@@ -39,52 +39,5 @@ const Post = ({ data }) => {
     </Layout>
   );
 };
-
-export const pageQuery = graphql`
-  query($postPath: String!) {
-    markdownRemark(frontmatter: { path: { eq: $postPath } }) {
-      html
-      timeToRead
-      frontmatter {
-        title
-        date(formatString: "DD MMM YYYY")
-        tags
-        path
-        excerpt
-        cover {
-          childImageSharp {
-            fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFluid_tracedSVG
-            }
-          }
-        }
-      }
-    }
-    allMarkdownRemark(
-      filter: {
-        frontmatter: { path: { ne: $postPath } }
-        fileAbsolutePath: { regex: "/index.md$/" }
-      }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            path
-            title
-            tags
-            excerpt
-            cover {
-              childImageSharp {
-                fluid(maxWidth: 600) {
-                  ...GatsbyImageSharpFluid_tracedSVG
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
 
 export default Post;

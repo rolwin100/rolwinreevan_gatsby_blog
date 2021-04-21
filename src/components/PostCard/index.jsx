@@ -1,33 +1,33 @@
 import React from 'react';
 import moment from 'moment';
-import { Link } from 'gatsby';
 import style from './postCard.module.less';
+import { LikeOutlined } from '@ant-design/icons';
 
 const PostCard = (props) => {
-  const { data: { node: { frontmatter } } } = props;
-
+  const { data } = props;
   return (
     <div className={style.postCard}>
-      <Link to={frontmatter.path}>
+      <a href={"https://mehdio.medium.com/" + data.slug + "-" + data.medium_id}>
         <div
           className={style.postCardImg}
           style={{
-            backgroundImage: `url(${frontmatter ? frontmatter.cover.childImageSharp.fluid.src : ''})`,
+            backgroundImage: `url(https://miro.medium.com/max/1000/${data.virtuals.previewImage.imageId})`,
           }}
         />
         <div className={style.mrTp20}>
           <p>
-            <span className={style.dateHolder}>{frontmatter ? moment(frontmatter.date).format('MMM Do YYYY') : ''}</span>
+            <span className={style.dateHolder}>{data ? moment(data.updatedAt).format('MMM Do YYYY') : ''}</span>
           </p>
-          <h3>{frontmatter ? frontmatter.title : ''}</h3>
-          <p>{frontmatter ? frontmatter.excerpt : ''}</p>
-          <p style={{ color: '#ce6d96', wordSpacing: '10px' }}>
+          <h3>{data ? data.title : ''}</h3>
+          <p>{data ? data.virtuals.subtitle : ''}</p>
+          <p><LikeOutlined /> {data ? data.virtuals.totalClapCount : ''}</p>
+          <p style={{ color: '#ce6d96' }}>
             {
-                `#${frontmatter.tags.join(' #')}`
+              data.virtuals.tags.map(tag_name => ` #${tag_name.name.replace(/ /g, "").toLowerCase()}`)
             }
           </p>
         </div>
-      </Link>
+      </a>
     </div>
   );
 };
