@@ -7,6 +7,7 @@ Feature :
 * React & Gatsby
 * Ant Design
 * Beautiful Opensource illustration from <a href='https://undraw.co/' target='_blank'>undraw.co</a>
+* Preview Medium blog posts section
 
 ## 🚀 Quick start
 
