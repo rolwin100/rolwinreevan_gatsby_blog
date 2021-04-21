@@ -14,6 +14,12 @@ module.exports = [
     },
   },
   {
+    resolve: 'gatsby-source-medium',
+    options: {
+      username: '@mehdio',
+    },
+  },
+  {
     resolve: 'gatsby-plugin-manifest',
     options: {
       name: 'Mehdi OUAZZA',
