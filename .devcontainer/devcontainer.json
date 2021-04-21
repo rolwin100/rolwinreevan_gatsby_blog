@@ -1,33 +1,28 @@
 {
 	"name": "Node.js & TypeScript",
 	"build": {
+		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick a Node version: 10, 12, 14
-		"dockerfile": "../docker/dev.Dockerfile",
-		"context": "..",
-		"args": { 
-			"VARIANT": "14"
-		
+		"args": { "VARIANT": "14" }
 	},
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/zsh",
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"terminal.integrated.shell.linux": "/bin/bash"
 	},
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode",
-		"eamodio.gitlens"
+		"ms-vscode.vscode-typescript-tslint-plugin"
 	],
 
-	"postCreateCommand": "yarn install && npm install firebase-tools -g",
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
 
-	"forwardPorts": [3000],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "yarn install",
 
-	"mounts": [
-		"source=${localEnv:HOME}/.ssh,target=/root/.ssh,type=bind,consistency=cached",
-		"source=${localEnv:HOME}/.config,target=/root/.config,type=bind,consistency=cached"
-	  ]
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "node"
 }
