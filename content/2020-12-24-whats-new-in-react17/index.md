@@ -48,7 +48,7 @@ The below diagram shows us how the event progation works in React 16 vs React 17
 
 This is why we can nest muliple versions of React in React 17.
 
-## Changelog in React 17
+## Major Changelog in React 17
 
 ### The new JSX transform
 
@@ -75,3 +75,15 @@ function MyComponent() {
 ```
 
 The react team has worked closely with the babel developers to introduce this feature. There is a chance that this feature may reduce the bundle size according to the react docs.
+
+## React DOM Changelog
+
+### Delegate events to the root instead of the document
+
+Prior to React 17 the events were delegated to the document rather than to the root. This had created several issues mostly with embedding different versions of React into an application. With React 17 the events are delegated to the root. This helps us embed multiple versions of React into the application. 
+
+### Clean up all effects before running any new effects
+
+Previously we only flushed destroy functions for a single fiber. The reason this is important is because the destroy function in one component can interfere with the ref value of another component.
+
+the above are few changes probably I liked there are other changes noted on their official website. You can check it [here](`https://reactjs.org/blog/2020/10/20/react-v17.html`).
